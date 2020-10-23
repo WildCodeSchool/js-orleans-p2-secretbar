@@ -1,39 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --main-color: #1d1b19;
+  --second-color: #fffcf8;
+  --third-color: #e9ae60;
+  --fourth-color: #918f8b;
+  --main-font: 'Julius Sans One', sans-serif;
+  --second-font: 'Open Sans', sans-serif;
+  --font-size-main: 16px;
+  --font-size-title: calc(var(--font-size-main) * 2);
+  --spacing: 8px;
+  --spacing-medium: calc(var(--spacing) * 2);
+  --spacing-large: calc(var(--spacing) * 4);
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #000911;
-  color: #97d8eb;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  color: #000911;
-  font-weight: bold;
-  background-color: #97d8eb;
-  padding: 0.3rem;
-  border-radius: 3px;
+h1 {
+  color: var(--gold-color);
+  font-family: var(--main-font);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+@media screen and((min-width: 768px) and (max-width: 1024px)) {
 }
 
-.item {
-  text-align: center;
-  width: fit-content;
-}
-
-.item > img {
-  max-width: 80vw;
-}
-
-.container::after {
-  content: '';
-  height: 15vh;
+@media screen and(max-width:768px) {
 }
