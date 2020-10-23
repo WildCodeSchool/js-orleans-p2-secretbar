@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
 :root {
-  --black-color: #1d1b19;
-  --white-color: #fffcf8;
-  --grey-color: #918f8b;
-  --gold-color: #e9ae60;
+  --dark: #1d1b19;
+  --light: #fffcf8;
+  --second-color: #918f8b;
+  --main-color: #e9ae60;
   --main-font: 'Julius Sans One', sans-serif;
   --second-font: 'Open Sans', sans-serif;
   --font-size-main: 16px;
