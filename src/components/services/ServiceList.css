@@ -7,26 +7,6 @@
   justify-content: space-around;
 }
 
-.HeadTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: var(--spacing-large);
-}
-
-.ServicesTitle {
-  font-family: var(--main-font);
-  font-size: calc(var(--font-size-main) * 2.5);
-  color: var(--main-color);
-  text-align: center;
-  position: relative;
-}
-
-.Goldline {
-  width: 32%;
-  margin-top: -16px;
-}
-
 .Services {
   display: flex;
   justify-content: space-around;
@@ -34,32 +14,4 @@
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
-}
-
-@media screen and ((min-width: 768px) and (max-width: 1024px)) {
-  .HeadTitle {
-    margin-bottom: calc(var(--spacing-large) * 2);
-  }
-  .ServicesTitle {
-    font-size: calc(var(--font-size-main) * 2.2);
-    margin-bottom: calc(var(--spacing-large) * 2.5);
-  }
-  .Goldline {
-    width: 40%;
-    margin-top: -64px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .HeadTitle {
-    margin-bottom: calc(var(--spacing-large) * 1.6);
-  }
-  .ServicesTitle {
-    font-size: calc(var(--font-size-main) * 1.6);
-    margin-bottom: calc(var(--spacing-large) * 2);
-  }
-  .Goldline {
-    width: 56%;
-    margin-top: -56px;
-  }
 }

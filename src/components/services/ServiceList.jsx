@@ -1,3 +1,4 @@
+import SectionTitle from '../section-title/SectionTitle';
 import Service from './Service';
 import './ServiceList.css';
 
@@ -16,7 +17,7 @@ const services = [
   },
   {
     image: 'https://zupimages.net/up/20/44/3n9i.jpg',
-    service: 'Voituriers',
+    service: 'Voiturier',
     description:
       "Nos chauffreurs, triés sur le volet, vous garantissent une conduite douce et agréable afin de vous ramener chez vous dans les meilleures conditions. L'expérience Wild Code Bar à vivre jusqu'à votre domicile...",
   },
@@ -25,18 +26,12 @@ const services = [
 function ServiceList() {
   return (
     <div className="ServicesSection">
-      <div className="HeadTitle">
-        <h2 className="ServicesTitle">Nos services</h2>
-        <img
-          className="Goldline"
-          src="https://zupimages.net/up/20/44/hrq1.png"
-          alt="line"
-        />
-      </div>
+      <SectionTitle title="Nos Services" color="black" />
 
       <div className="Services">
         {services.map((service) => (
           <Service
+            key={service.service}
             image={service.image}
             service={service.service}
             description={service.description}
