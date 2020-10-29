@@ -1,0 +1,175 @@
+ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none; 
+    margin:0;
+    width:660px;
+}
+
+.Navbar{
+    height: 55px;
+    background-color:rgba(29, 27, 25, 0.9);
+}
+
+.contain{
+    background-color:rgba(29, 27, 25 ,);
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+a{
+    padding-top: 18px ;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: Julius Sans One; 
+    color: rgb(255, 252, 248);
+    text-decoration: none;
+    background: linear-gradient(to top,  rgb(233, 174, 96) 0%,  rgb(233, 174, 96)1%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+  
+  a:hover {
+    background-size: 100% 100%;
+  }
+
+@font-face{
+    font-family: "Julius Sans One";
+    src:url('Julius_Sans_One/JuliusSansOne-Regular.ttf');
+}
+
+.burger{
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:24px;
+    height:24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+
+.close{
+    display: none;
+}
+.burger div{
+    height:4px;
+    background-color:rgb(233, 174, 96);
+}
+.enseigne{
+    margin-bottom:-8px;
+}
+.navbar--logo{
+    padding-top: 8px;
+    height: 40px;
+}
+.menu--logo{
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+    
+    .navbar--logo{
+        height: 40px;
+    }
+    .Menu{
+        display:none;
+    }
+    .burger{
+        display: flex;
+    }
+    .burger:hover{
+        background-size: 0% 0%;
+    }
+    .Menu:target{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        background-color: rgb(29, 27, 25);
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+    a {
+        padding-bottom: 8px;
+    }
+
+    
+    a:link { 
+        text-decoration:none; 
+    }
+    
+    .close{
+        display: block;
+        position: fixed;
+        color: rgb(255, 252, 248);
+        top:30px;
+        right: 30px;
+
+    }
+    .close:hover{
+        background-size: 0% 0%;
+    }
+    li{
+        border-left: 0px ;
+    }
+    .menu--logo{
+        display: none;
+    }
+    .contain{
+        
+        background-color:rgba(29, 27, 25 ,);
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        margin-left:10px ;
+        margin-right:10px;
+        
+        
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    nav{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+    }
+    .Navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu--logo{
+        display: flex;
+    }
+    .logoCart{
+        margin-top: 13px;
+        height: 30px;
+        margin-left: 60px;
+    }
+    .logoPhoto{
+        margin-top: 13px;
+        margin-left: 60px;
+        height: 30px;
+    }
+    .logoAcceuil{
+        margin-top: 13px;
+        height: 30px;
+    }
+    .burger{
+        display: none;
+    }
+    .enseigne{
+        display: none;
+    }
+    .Menu{
+        display: none;
+
+    }
+}
