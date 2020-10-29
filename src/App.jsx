@@ -1,9 +1,10 @@
 import './App.css';
+import ServiceList from './components/services/ServiceList';
 
 function App() {
   return (
     <main className="container">
-      <h1>Secret Bar Project</h1>
+      <ServiceList />
     </main>
   );
 }
