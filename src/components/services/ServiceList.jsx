@@ -7,7 +7,7 @@ const services = [
     image: 'https://zupimages.net/up/20/44/cltb.jpg',
     service: 'Lounge Bar',
     description:
-      "Découvrez notre nouveau lounge crée exclusivement par le meilleur designer au monde. Détendez-vous sur nos canapés Rochebobois et profitez d'une ambiance feutrée et de sa musique d'ambiance, idéal pour dégustez nos alcools d'exceptions.",
+      "Découvrez notre nouveau lounge créé exclusivement par le meilleur designer au monde. Détendez-vous sur nos canapés Rochebobois et profitez d'une ambiance feutrée et de sa musique d'ambiance, idéal pour déguster nos alcools d'exception.",
   },
   {
     image: 'https://zupimages.net/up/20/44/54v9.jpg',
@@ -19,7 +19,7 @@ const services = [
     image: 'https://zupimages.net/up/20/44/3n9i.jpg',
     service: 'Voiturier',
     description:
-      "Nos chauffreurs, triés sur le volet, vous garantissent une conduite douce et agréable afin de vous ramener chez vous dans les meilleures conditions. L'expérience Wild Code Bar à vivre jusqu'à votre domicile...",
+      "Nos chauffeurs, triés sur le volet, vous garantissent une conduite douce et agréable afin de vous ramener chez vous dans les meilleures conditions. L'expérience Wild Code Bar à vivre jusqu'à votre domicile...",
   },
 ];
 
