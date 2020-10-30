@@ -1,9 +1,12 @@
 import './App.css';
+import Formevent from './components/event/Formevent';
+import Popevent from './components/event/Popevent';
 
 function App() {
   return (
     <main className="container">
-      <h1>Secret Bar Project</h1>
+      <Formevent />       
+         
     </main>
   );
 }
