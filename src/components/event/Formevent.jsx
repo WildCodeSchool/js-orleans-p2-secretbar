@@ -42,7 +42,7 @@ class Formevent extends Component {
 
                         <h3 className="titleEvent">White Party</h3>
                         <p>26-11-2020</p>
-                        <p className="descriptionEvent">Venez profiter de nos soirée à ambiance idyllique, à défaut de trop avoir consommé...   </p>
+                        <p className="descriptionEvent">Venez profiter de nos soirées à ambiance idyllique, à défaut de trop avoir consommé...   </p>
                         
                         <textarea type="text" id="message" cols="60" rows="6" placeholder={this.state.message} onChange={this.handleChangeMessage}/>
                         
