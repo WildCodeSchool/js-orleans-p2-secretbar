@@ -6,7 +6,6 @@ function App() {
   return (
     <main className="container">
       <Navbar/>
-      <h1>Secret Bar Project</h1>
     </main>
   );
 }

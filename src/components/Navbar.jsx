@@ -1,56 +1,50 @@
 import React from 'react';
 import './Navbar';
 import './Navbar.css';
-import logo from './image/logobar.png';
-import logoCarte from './image/logoCarte.png'
-import logoPhotos from './image/portefolio.png'
-import logoHome from './image/accueil.png'
-import { Switch, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-/*import * from './components/*';
-import * from './components/*';
-import * from './components/*';*/
 
 
 
-class Navbar extends React.Component {
 
+
+
+
+
+class Navbar extends React.Component{
     render(){
-
         return (
-            <nav className='Navbar'>
+
+            <nav className='navbar'>
                 <div className='contain'>
-                <div className='enseigne'>
-                    <img className='navbar--logo' src={logo} alt="logo" />
+                <div className='tab'>
+                    <img className='navbar--logo' src="https://zupimages.net/up/20/44/kzh0.png"  ></img>
                 </div>
                 <div className='menu--logo'>
-                    <img className= 'logoAccueil' src={logoHome} alt="logo" />
-                    <img className= 'logoCart' src={logoCarte} alt="logo" />
-                    <img className= 'logoPhoto' src={logoPhotos} alt="logo" /> 
+                    <img className= 'logoHome' src='https://zupimages.net/up/20/44/ji9d.png' alt="logo" />
+                    <img className= 'logoCart' src='https://zupimages.net/up/20/44/33qx.png' alt="logo" />
+                    <img className= 'logoPicture' src='https://zupimages.net/up/20/44/xk4n.png' alt="logo" /> 
                 </div>
-                <div className='Menu' id="menu">
+                <ul className='menu' id="menu">
                     
-                    <a className='close' >X</a>
-                    <div className='Onglets'>
-                    <Link to="/"> Accueil </Link>
-                    <Link to="/" > Carte </Link>
-                    <Link to="/">Livre d'or</Link>
-                    </div>
-                    <div>
-                    <Switch>
-                    <Route exact path="/" component={}/>
-                    <Route path="/" component={}/>
-                    <Route path="/" component={}/>
-                    <Route path="/" component={}/>
-                    </Switch>
-                    </div>
-                    </div>
+                    <a className='close' href="#" >X</a>
+                    
+                    <a className='' href="">
+                        Acceuil
+                    </a>
+                    <a className='' href='' >
+                        Menu de la carte
+                    </a>
+                    <a className='' href=''>
+                        livre d'or
+                    </a>
+                    </ul>
+                    
                 
-                <a href="#menu"className='burger'>
+                <a href="#menu" className='burger'>
                     <div></div>
                     <div></div>
                     <div></div>
                 </a>
+
                 </div>
             </nav>
             );
