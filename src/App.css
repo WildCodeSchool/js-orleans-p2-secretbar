@@ -15,7 +15,7 @@
   --spacing-large: calc(var(--spacing) * 4);
 }
 
-* {
+v{
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -30,6 +30,7 @@ h1 {
   color: var(--gold-color);
   font-family: var(--main-font);
 }
+
 
 @media screen and ((min-width: 768px) and (max-width: 1024px)) {
 }
