@@ -28,10 +28,10 @@ class Navbar extends React.Component{
                     <a className='close' href="#" >X</a>
                     
                     <a className='' href="">
-                        Acceuil
+                        Accueil
                     </a>
                     <a className='' href='' >
-                        Menu de la carte
+                        Carte
                     </a>
                     <a className='' href=''>
                         livre d'or
