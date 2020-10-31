@@ -1,8 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/sort-comp */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import SectionTitle from '../section-title/SectionTitle';
 import Popevent from './Popevent';
@@ -73,13 +68,12 @@ class Formevent extends React.Component {
               className="buttonEvent"
               onClick={this.togglePopevent.bind(this)}
             >
-              {' '}
-              Réserver{' '}
+              Réserver
             </button>
 
             {this.state.showPopevent ? (
               <Popevent
-                text='Votre réservation pour la "Soirée Blanche" est confirmée. Notre chauffeur viendra vous récupérer le 26/11/2020 à 19h30.'
+                text='Votre réservation pour la "Soirée Blanche" est confirmée. Notre chauffeur viendra vous récupérer le soir venu à 19h30.'
                 closePopevent={this.togglePopevent.bind(this)}
               />
             ) : null}
