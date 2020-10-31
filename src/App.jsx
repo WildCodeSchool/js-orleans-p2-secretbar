@@ -7,9 +7,6 @@ function App() {
   return (
     <main className="container">
       <Navbar />
-      <ServiceList />
-      <Formevent />
-      <ServiceList />
       <Formevent />
       <ServiceList />
     </main>
