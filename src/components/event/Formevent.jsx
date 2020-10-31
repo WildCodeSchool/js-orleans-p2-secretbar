@@ -1,3 +1,8 @@
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/sort-comp */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import SectionTitle from '../section-title/SectionTitle';
 import Popevent from './Popevent';
@@ -7,10 +12,12 @@ class Formevent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      date: new Date(),
       showPopevent: false,
       message: 'Indiquez-nous vos souhaits (cocktail, prestation,...)',
     };
     this.handleChangeMessage = this.handleChangeMessage.bind(this);
+    this.getTodayDate = this.getTodayDate.bind(this);
   }
 
   handleChangeMessage(e) {
@@ -23,6 +30,13 @@ class Formevent extends React.Component {
     this.setState({
       showPopevent: !this.state.showPopevent,
     });
+  }
+
+  getTodayDate() {
+    const day = this.state.date.getDate();
+    const month = this.state.date.getMonth() + 1;
+    const year = this.state.date.getFullYear();
+    return `${day}/${month}/${year}`;
   }
 
   render() {
@@ -40,7 +54,8 @@ class Formevent extends React.Component {
             <h3 className="titleEvent">White Party</h3>
             <p className="descriptionEvent">
               Tenue chic et blanche exigée, de nombreuses surprises et des
-              cocktails exclusifs vous attendent le DATE{' '}
+              cocktails exclusifs vous attendent le {this.getTodayDate()} au
+              Wild Code Bar
             </p>
 
             <textarea
