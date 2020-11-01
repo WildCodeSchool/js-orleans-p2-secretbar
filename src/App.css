@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-
 :root {
   --main-color: #1d1b19;
   --second-color: #fffcf8;
@@ -15,7 +14,7 @@
   --spacing-large: calc(var(--spacing) * 4);
 }
 
-v{
+* {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -26,14 +25,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  color: var(--gold-color);
-  font-family: var(--main-font);
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
 
-
-@media screen and ((min-width: 768px) and (max-width: 1024px)) {
-}
-
-@media screen and (max-width: 414px) {
-}
+@media screen and (max-width: 414px) {}
